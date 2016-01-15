@@ -1,7 +1,7 @@
 ---
 layout : post
 title : Garbage Collection
-published: false
+published: true
 ---
 
 ## Garbage Collection in Java
