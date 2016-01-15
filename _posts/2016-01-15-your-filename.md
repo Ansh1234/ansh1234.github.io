@@ -1,4 +1,6 @@
 ---
+layout : post
+title : Garbage Collection
 published: false
 ---
 
