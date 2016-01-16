@@ -1,0 +1,26 @@
+Atomic topics
+
+1) Mark and Sweep Algorithm.
+2) Generations
+3) Various types of Collectors
+4) How to choose a garbage collector for any generation ?
+5) Various Jvm parameters for garbage collection and their impact on it.
+6) References, finalize and System.gc in Java and how do they contribute in Garbage Collection ?
+7) How to live track garbage collection in any running Java application. 
+8) Representation of Garbage collection.
+
+
+Topic Wise
+
+1) Garbage Collection in Java - Fundamentals
+	a) Mark and Sweep Algorithm
+	b) Various types of Collectors
+	c) Generations
+	d) How to choose appropriate Garbage Collector ?
+2) Garbage Collection in depth with Example
+	a) Representation of Garbage Collector.
+3) Various parameters in Garbage Collections and their impact  
+	a) Various Jvm Parameters for garbage collection and their impact on it.
+	b) How to live track garbage collection on any running Java application ?
+4) Garbage Collection progrmatically
+	a) References, finalize and System.gc in Java and how do they contribute in Garbage Collection ?
