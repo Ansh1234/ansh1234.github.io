@@ -3,16 +3,10 @@ layout: default
 ---
 
 <div class="posts">
-  {% for post in site.posts %}
+  
     <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{post.description}}</a></h1>
-
-    <!--   <h1><a href="{{ site.baseurl }}{{ post.url }}">Garbage Collection with an example</a></h1>
-      
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">JVM parameters for GC</a></h1>
-      
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">Achieve Garbage Collection programatically</a></h1> -->
+      Garbage Collector is one of the few areas where even the most experienced Java Developers fumble. Although Garbage Collection in Java is fairly straightforward, the reason why developers don’t have a hold on the topic is because Java itself takes care of this phenomenon and leaves nearly nothing in the hands of the developers. But in order to do better programming one must understand the underlying machinery. This post explains the garbage collection in the most widely used JVM implementation Hotspot which is provided by Oracle
     </article>
-  {% endfor %}
+  
 </div>
