@@ -2,7 +2,7 @@
 layout: default
 title : Garbage Collection in Java
 category : gc
-description : Deep dive into Java's Garbage Collection with 4 series tutorial.
+description : Deep dive into Java's Garbage Collection with 4-series tutorial.
 url : "topics/garbagecollection/introduction.html"
 ---
 
