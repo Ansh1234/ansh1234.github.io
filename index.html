@@ -4,16 +4,12 @@ layout: profile
 
 <div class="posts">
   
+  {% for post in site.posts %}
   <article class="post">
-
-      <h1><a href="{{ site.baseurl }}/topics/gc.html">Garbage Collection in Java</a></h1>
-
+      <h1><a href="{{ site.baseurl }}{{post.url}}">{{post.title}}</a></h1>
       <div class="entry">
-        Deep dive into Java's Garbage Collection with 4-series tutorial.
+        {{ post.description }}
       </div>
-
-    </article>
-    
-    
-  
+   </article>    
+   {% endfor %}
 </div>

@@ -1,12 +1,11 @@
 ---
 layout: post
-title: Garbage Collection
-description : Garbage Collection progrmatically
-excerpt: "Deep dive into Java's Garbage Collection."
+title : Garbage Collection 
+description : Deep Dive into Java's Garbage Collection
 published: true
-name : Part4
+text-to-display : [Introduction, Part1, Part2, Part3,Part4]
+url-to-go : [/topics/garbagecollection/introduction.html,/topics/garbagecollection/gc1.html,/topics/garbagecollection/gc2.html,/topics/gc/gc3.html,/topics/garbagecollection/gc4.html]
 ---
-
 
 ## Garbage Collection in Java
 
