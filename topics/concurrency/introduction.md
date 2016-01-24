@@ -10,8 +10,13 @@ category : "Thread"
 
 
 
+Prior to Java 5, achieving concurrency was a difficult task for a developer. But thanks to the introduction of the very powerful Executor framework, developers can achieve this feat with relative ease. So what exactly does this framework try to achieve ?
+1. The most important feature of this framework is seperation of concerns. It lets the developer to create tasks, and let the framework decide when, how and where to execute that task ?
+2. It relieves the developer with the creation of Threads.
+3. It provides the developers various types of queues for storing the tasks. 
 
-## Garbage Collection in Java to Test
+({{ site.url }}/images/first-post.png)
+
 
 Garbage Collector is one of the few areas where even the most experienced Java Developers fumble. Although Garbage Collection in Java is fairly straightforward, the reason why developers don’t have a hold on the topic is because Java itself takes care of this phenomenon and leaves nearly nothing in the hands of the developers. But in order to do better programming one must understand the underlying machinery. This post explains the garbage collection in the most widely used JVM implementation Hotspot which is  provided by Oracle. 
 
