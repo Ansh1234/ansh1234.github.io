@@ -1,7 +1,6 @@
 ---
 layout: default
 title : Executors in Java
-category : gc
 description : Deep dive into the Executor framework.
 url : "topics/concurrency/introduction.html"
 ---
