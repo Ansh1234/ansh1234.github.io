@@ -1,24 +1,20 @@
 <!DOCTYPE html>
-<html lang="en-us">
-
-  <!DOCTYPE html>
 <html>
 <body>
-<p><a href="http://aamaadmiparty.org/">Aam Admi Party</a></p>
-<p><a href="https://www.cleartrip.com/?gclid=EAIaIQobChMIz8fY5aiO2QIVCLjACh1oHwCvEAAYASAAEgKVJfD_BwE">Clear trip</a></p>
-<p><a href="http://m.dailyhunt.in/news/india/english/sports-topics-17">Sports DeepLink</a></p>
+
+<p>Click the button to trigger a function that will output "Hello World" in a p element with id="demo".</p>
+
+<button onclick="myFunction()">Share Test</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+      newsHuntAction.webShare('{\'packageName\' : \'com.whatsapp\', \'title\' : \'Share Title\',\'shareUrl\' : \'abc\',\'subject\' : \'Share Subject\',  \'shareUi\':\'tickerEmbed\', \'contentLanguage\':\'en\'}');
+
+}
+</script>
+
 </body>
 </html>
-  {% include head.html %}
 
-  <body class="theme-base-08">
-
-    {% include profile-sidebar.html %}
-
-    <div class="content container">
-      {{ content }}
-    
-    </div>
-
-  </body>
-</html>
