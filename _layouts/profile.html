@@ -1,24 +1,158 @@
-<!DOCTYPE html>
+
+
 <html>
-<body>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <style type="text/css">
+        *,body,html{line-height:normal;margin:0;padding:0;
+                font-family:arial,sans-serif;
+                font-size:14px;
+                color:#000}
+        html{overflow-y:scroll;font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+        a,em,h1,h2,h3,h4,h5,h6,img,li,p,strong,table,tbody,td,tfoot,th,thead,tr,ul{
+                margin:0;padding:0;border:0;font-weight:400;font-style:normal;font-size:100%;font-family:inherit;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+                .main form .Content{padding:15px 10px}
+                .main hr{margin:0 10px}
+                .main form p{font-size:14px;font-weight:bold;margin:0 10px;padding:10px 0}
+                .main form .Content label.ltext{font-size:12px;font-weight:bold}
+                .main form .Content .r_btn{vertical-align:middle}
+                .main form .cmnt,.main form .mail{margin:10px}
 
- <a href="/news/india/english/the+quint-epaper-quint/andhra+pradesh+tops+ease+of+doing+business+rankings+delhi+23rd-newsid-92050324">Testing linking</a>
-   
- <a href="https://www.w3schools.com">Visit W3Schools.com!</a>
- 
-<p style="font-size : 25px" >Click the button to trigger a function that will output "Hello World" in a p element with id="demo".</p>
+                .main form .mail em,.cmnt em{font-size:12px;font-weight:bold}
+                .main form .mail .opt,.cmnt .opt{font-size:12px}
+                .main form .cmnt .txt{width:100%;min-height:70px;border-radius:5px;border-color:#c3c3c3}
+                .main form .mail .emailtxt{width:100%;border-radius:3px;border: 1px solid #c3c3c3;min-height: 30px}
+                .submit_btn{text-align: center;bottom:0;width:100%;text-transform:uppercase}
+                .submit_btn .btn{color:#fff;background-color:#f23e08;border:0;border-radius:25px;padding:5px 25px;text-transform:uppercase}
+		.noshow {display:none;}
+                div{
+                        padding: 10px;
+                }
 
-<button style="font-size : 40px;" onclick="myFunction()">Share Test</button>
 
-<p id="demo"></p>
+                </style>
 
-<script>
-function myFunction() {
-      newsHuntAction.webShare('{\'packageName\' : \'com.whatsapp\', \'title\' : \'Share Title\',\'shareUrl\' : \'abc\',\'subject\' : \'Share Subject\',  \'shareUi\':\'tickerEmbed\', \'contentLanguage\':\'en\'}');
 
-}
-</script>
 
+</head>
+        <body>
+                <div class="main">
+
+                        <p>
+                                Help us understand why you want to report this.
+                                
+                        </p>
+
+                        <br>
+
+                        <form name="user_report" action="/report/abuse/" method="post" onsubmit="return ValidationEvent()" target="_blank">
+                                
+                                <div>
+                                        <input type="radio" class="r_btn" name="reported_reason" value="1"
+                                        
+                                        >
+                                        <label class="ltext">Inappropriate content</label>
+                                </div>
+                                
+                                <div>
+                                        <input type="radio" class="r_btn" name="reported_reason" value="2"
+                                        
+                                        >
+                                        <label class="ltext">Hateful or abusive content</label>
+                                </div>
+                                
+                                <div>
+                                        <input type="radio" class="r_btn" name="reported_reason" value="3"
+                                        
+                                        >
+                                        <label class="ltext">Copyright / trademark infringe</label>
+                                </div>
+                                
+                                <div>
+                                        <input type="radio" class="r_btn" name="reported_reason" value="4"
+                                        
+                                        >
+                                        <label class="ltext">Spam or misleading</label>
+                                </div>
+                                
+                                <div>
+                                        <input type="radio" class="r_btn" name="reported_reason" value="5"
+                                        
+                                        >
+                                        <label class="ltext">Content not visible / playable</label>
+                                </div>
+                                
+                                <div>
+                                        <input type="radio" class="r_btn" name="reported_reason" value="6"
+                                        
+                                        >
+                                        <label class="ltext">Others</label>
+                                </div>
+                                
+                                <div class="cmnt">
+                                        <div class="cmt_opt">
+                                                <em>Comment  :  </em><span class="opt">(Optional)</span>
+                                        </div>
+                                        <textarea class="txt" name="comment"></textarea>
+                                </div>
+                                <div class="mail">
+                                        <div class="cmt_opt">
+                                                <em>Email  :  </em><span class="opt">(USED ONLY for us to communicate with you on this matter)</span>
+                                        </div>
+                                        <input type="email" id="email" class="emailtxt" name="email" value="">
+                                </div>
+
+                                <div class="noshow">
+                                        <input type="text" name="reported_by" value="None" hidden>
+                                </div>
+                                <div class="noshow">
+                                        <input type="text" name="reported_id" value="6977ab76-f02c-44e0-a883-f7738dbcec34" hidden>
+                                </div>
+                                <div class="noshow">
+                                        <input type="text" name="client_id" value="3097987" hidden>
+                                </div>
+                                <div class="noshow">
+                                        <input type="text" name="reported_type" value="CONTENT" hidden>
+                                </div>
+                                <div class="submit_btn">
+                                        <input type="submit" class="btn" value="Report" id="submit_btn">
+                                </div>
+                        </form>
+                </div>
+        </div>
+        <script type="text/javascript">
+        
+        function ValidationEvent(){
+        	var c=document.getElementsByName("reported_reason");
+        	var b=false;var a=0;
+        	var selected_reason = ""
+        	while(!b&&a<c.length){
+        		if(c[a].checked){
+        			b=true
+        			var selected_reason = c[a].nextElementSibling.textContent;
+        		}a++
+        	}
+        	if(!b){
+        		alert("Must check some option!")
+        	}
+
+        	var email = document.getElementById("email").value;     
+        	if (selected_reason.toLowerCase().includes("copyright") && email.length < 3 ){
+        		alert("Must provide and Email ID!")
+        		b = false
+        	}
+
+        	if(b)
+        	{
+	        	document.getElementById("submit_btn").disabled = true;
+	        	document.getElementById("submit_btn").value = "Sending ...";	
+        	}
+
+    		return b
+        };
+
+
+        </script>
 </body>
 </html>
-
